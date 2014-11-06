@@ -3,7 +3,7 @@
     android:id="@+id/quoteView"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:padding="5dip"
-    android:textSize="32sp" >
+    android:padding="@dimen/textview_padding"
+    android:textSize="@dimen/text_size">
 
 </TextView>

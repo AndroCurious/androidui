@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?android:attr/activatedBackgroundIndicator"
-    android:padding="5dip"
-    android:textSize="32sp" >
+    android:padding="@dimen/textview_padding"
+    android:textSize="@dimen/text_size">
 
 </TextView>

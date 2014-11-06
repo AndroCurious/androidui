@@ -3,120 +3,58 @@ package course.examples.Fragments.DynamicLayout;
 import android.app.Activity;
 import android.app.ListFragment;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-//Several Activity and Fragment lifecycle methods are instrumented to emit LogCat output
-//so you can follow the class' lifecycle
 public class TitlesFragment extends ListFragment {
-	private static final String TAG = "TitlesFragment";
-	private ListSelectionListener mListener = null;
 
-	// Callback interface that allows this Fragment to notify the QuoteViewerActivity when  
-	// user clicks on a List Item  
-	public interface ListSelectionListener {
-		public void onListSelection(int index);
-	}
+    @SuppressWarnings("unused")
+    private static final String TAG = "TitlesFragment";
+    private ListSelectionListener mListener = null;
 
-	// Called when the user selects an item from the List
-	@Override
-	public void onListItemClick(ListView l, View v, int pos, long id) {
+    // Callback interface that allows this Fragment to notify the QuoteViewerActivity when
+    // user clicks on a List Item
+    public interface ListSelectionListener {
+        public void onListSelection(int index);
+    }
 
-		// Indicates the selected item has been checked
-		getListView().setItemChecked(pos, true);
-		
-		// Inform the QuoteViewerActivity that the item in position pos has been selected
-		mListener.onListSelection(pos);
-	}
+    // Called when the user selects an item from the List
+    @Override
+    public void onListItemClick(ListView l, View v, int pos, long id) {
 
-	@Override
-	public void onAttach(Activity activity) {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onAttach()");
-		super.onAttach(activity);
-		
-		try {
+        // Indicates the selected item has been checked
+        getListView().setItemChecked(pos, true);
 
-			// Set the ListSelectionListener for communicating with the QuoteViewerActivity
-			mListener = (ListSelectionListener) activity;
-		
-		} catch (ClassCastException e) {
-			throw new ClassCastException(activity.toString()
-					+ " must implement OnArticleSelectedListener");
-		}
-	}
+        // Inform the QuoteViewerActivity that the item in position pos has been selected
+        mListener.onListSelection(pos);
+    }
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onCreate()");
-		super.onCreate(savedInstanceState);
-	}
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onCreate()");
-		return super.onCreateView(inflater, container, savedInstanceState);
-	}
+        try {
 
+            // Set the ListSelectionListener for communicating with the QuoteViewerActivity
+            mListener = (ListSelectionListener) activity;
 
-	@Override
-	public void onActivityCreated(Bundle savedState) {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onActivityCreated()");
-		super.onActivityCreated(savedState);
-		
-		// Set the list adapter for the ListView 
-		// Discussed in more detail in the user interface classes lesson  
-		setListAdapter(new ArrayAdapter<String>(getActivity(),
-				R.layout.title_item, QuoteViewerActivity.mTitleArray));
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement OnArticleSelectedListener");
+        }
+    }
 
-		// Set the list choice mode to allow only one selection at a time
-		getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-	}
+    @Override
+    public void onActivityCreated(Bundle savedState) {
+        super.onActivityCreated(savedState);
 
-	@Override
-	public void onStart() {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onStart()");
-		super.onStart();
-	}
+        // Set the list adapter for the ListView
+        // Discussed in more detail in the user interface classes lesson
+        setListAdapter(new ArrayAdapter<String>(getActivity(),
+                R.layout.title_item, QuoteViewerActivity.mTitleArray));
 
-	@Override
-	public void onResume() {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onResume()");
-		super.onResume();
-	}
-
-	@Override
-	public void onPause() {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onPause()");
-		super.onPause();
-	}
-
-	@Override
-	public void onStop() {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onStop()");
-		super.onStop();
-	}
-
-	@Override
-	public void onDetach() {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onDetach()");
-		super.onDetach();
-	}
-
-	@Override
-	public void onDestroy() {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onDestroy()");
-		super.onDestroy();
-	}
-
-	@Override
-	public void onDestroyView() {
-		Log.i(TAG, getClass().getSimpleName() + ":entered onDestroyView()");
-		super.onDestroyView();
-	}
-
+        // Set the list choice mode to allow only one selection at a time
+        getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+    }
 }

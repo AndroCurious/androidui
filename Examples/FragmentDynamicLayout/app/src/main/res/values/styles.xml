@@ -2,7 +2,6 @@
 
     <style name="AppTheme" parent="android:Theme.Material">
 
-        <!-- Customize your theme here -->
         <item name="android:colorPrimary">@color/indigo</item>
         <item name="android:colorAccent">@color/pink</item>
         <item name="android:textColorPrimary">@android:color/white</item>
