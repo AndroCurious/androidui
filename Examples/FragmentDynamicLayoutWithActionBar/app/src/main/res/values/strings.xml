@@ -9,6 +9,7 @@
     <string name="provided_by_quote_activity_string">This action provided by the QuoteViewerActivity</string>
     <string name="provided_by_title_fragment_string">This action provided by the TitlesFragment</string>
     <string name="provided_by_quote_fragment">This action provided by the QuoteFragment</string>
+    <string name="also_provided_quote_string">This action is also provided by the QuoteFragment</string>
 
 
     <string-array name="Titles">
@@ -16,6 +17,7 @@
         <item>King Lear</item>
         <item>Julius Caesar</item>
     </string-array>
+
     <string-array name="Quotes">
         <item>Now cracks a noble heart. Good-night, sweet prince; And flights of angels sing thee to thy rest.</item>
         <item>As flies to wanton boys, are we to the gods; they kill us for their sport.</item>

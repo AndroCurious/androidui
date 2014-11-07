@@ -11,16 +11,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-//Several Activity and Fragment lifecycle methods are instrumented to emit LogCat output
-//so you can follow the class' lifecycle
 public class TitlesFragment extends ListFragment {
-	ListSelectionListener mListener = null;
-	int mCurrIdx = -1;
+    private ListSelectionListener mListener = null;
+    private int mCurrIdx = -1;
 
-	// Callback interface that allows this Fragment to notify the QuoteViewerActivity when  
-	// user clicks on a List Item  
-	public interface ListSelectionListener {
-		public void onListSelection(int index);
+    // Callback interface that allows this Fragment to notify the QuoteViewerActivity
+    // when user clicks on a List Item
+    public interface ListSelectionListener {
+        public void onListSelection(int index);
 	}
 
 	@Override

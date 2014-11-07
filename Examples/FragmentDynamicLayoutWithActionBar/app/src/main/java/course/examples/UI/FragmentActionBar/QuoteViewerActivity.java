@@ -5,7 +5,6 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -17,14 +16,13 @@ public class QuoteViewerActivity extends Activity implements ListSelectionListen
     public static String[] QuoteArray;
     private final TitlesFragment mTitlesFragment = new TitlesFragment();
     private final QuoteFragment mDetailsFragment = new QuoteFragment();
-
     private FragmentManager mFragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Get the string arrays with the titles and qutoes
+        // Get the string arrays with the titles and quotes
         TitleArray = getResources().getStringArray(R.array.Titles);
         QuoteArray = getResources().getStringArray(R.array.Quotes);
 
@@ -59,7 +57,7 @@ public class QuoteViewerActivity extends Activity implements ListSelectionListen
             // Add the QuoteFragment to the layout
             fragmentTransaction.replace(R.id.quote_fragment_container, mDetailsFragment);
 
-            // Add this FragmentTransaction to the backstack
+            // Add this FragmentTransaction to the back stack
             fragmentTransaction.addToBackStack(null);
 
             // Commit the FragmentTransaction
