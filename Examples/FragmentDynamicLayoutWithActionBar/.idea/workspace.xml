@@ -33,7 +33,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../UIRecyclerView/.idea/libraries/recyclerview_v7_21_0_0_rc1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../UIRecyclerView/.idea/libraries/support_annotations_21_0_0_rc1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../UIRecyclerView/.idea/libraries/support_v4_21_0_0_rc1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../UISpinner/app/src/main/AndroidManifest.xml" />
@@ -44,7 +43,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/app.iml" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/app.iml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/app/app.iml" afterPath="$PROJECT_DIR$/../UISpinner/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/build.gradle" afterPath="$PROJECT_DIR$/../UIRecyclerView/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/build.gradle" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/build.gradle" afterPath="$PROJECT_DIR$/../UIRelativeLayout/build.gradle" />
@@ -61,15 +59,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/layout/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FragmentDynamicLayout/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FragmentDynamicLayout/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../UIRecyclerView/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../UISpinner/.idea/workspace.xml" />
     </list>
     <ignored path="FragmentDynamicLayoutWithActionBar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
-    <file path="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
