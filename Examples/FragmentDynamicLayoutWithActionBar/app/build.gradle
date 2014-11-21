@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.0"
 
     defaultConfig {
-        applicationId "course.examples.UI.FragmentActionBar"
+        applicationId "course.examples.ui.fragmentactionbar"
         minSdkVersion 21
         targetSdkVersion 21
     }

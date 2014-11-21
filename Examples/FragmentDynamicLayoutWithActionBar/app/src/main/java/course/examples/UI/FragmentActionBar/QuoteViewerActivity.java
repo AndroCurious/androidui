@@ -1,4 +1,4 @@
-package course.examples.UI.FragmentActionBar;
+package course.examples.ui.fragmentactionbar;
 
 import android.app.Activity;
 import android.app.FragmentManager;
@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import course.examples.UI.FragmentActionBar.TitlesFragment.ListSelectionListener;
+import course.examples.ui.fragmentactionbar.TitlesFragment.ListSelectionListener;
 
 public class QuoteViewerActivity extends Activity implements ListSelectionListener {
 

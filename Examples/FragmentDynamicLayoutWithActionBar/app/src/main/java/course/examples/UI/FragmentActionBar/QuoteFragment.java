@@ -1,4 +1,4 @@
-package course.examples.UI.FragmentActionBar;
+package course.examples.ui.fragmentactionbar;
 
 import android.app.Fragment;
 import android.os.Bundle;
