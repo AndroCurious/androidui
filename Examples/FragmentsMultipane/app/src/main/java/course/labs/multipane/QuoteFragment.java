@@ -13,11 +13,12 @@ import java.util.List;
 
 public class QuoteFragment extends Fragment {
 
+    @SuppressWarnings("unused")
     private static final String TAG = "Lab-Fragments";
-
+    private static final List<String> mQuotes = new ArrayList<String>();
     private TextView mQuoteView;
-    private static List<String> mQuotes = new ArrayList<String>();
     private int mCurrIdx = -1;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,18 +46,13 @@ public class QuoteFragment extends Fragment {
         updateFeedDisplay(mCurrIdx);
     }
 
-
-    public int getShownIndex() {
-        return mCurrIdx;
-    }
-
     // Display the Quote at position
     void updateFeedDisplay(int position) {
         if (position < 0 || position >= mQuotes.size()) {
             return;
         }
-            mCurrIdx = position;
-            mQuoteView.setText(mQuotes.get(position));
+        mCurrIdx = position;
+        mQuoteView.setText(mQuotes.get(position));
     }
 
 }

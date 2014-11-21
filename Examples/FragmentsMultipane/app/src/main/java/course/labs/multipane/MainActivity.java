@@ -3,89 +3,84 @@ package course.labs.multipane;
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.util.Log;
 
 public class MainActivity extends Activity implements
-		TitlesFragment.SelectionListener {
+        TitlesFragment.SelectionListener {
 
-	private static final String TAG = "Lab-Fragments";
-    private static final int QUOTE_FRAG_CONTAINER_ID = R.id.fragment_container;
-	private TitlesFragment mTitlesFragment;
-	private QuoteFragment mQuoteFragment;
+    @SuppressWarnings("unused")
+    private static final String TAG = "Lab-Fragments";
+    private static final int QUOTE_FRAG_CONTAINER = R.id.fragment_container;
+    private static final int FEED_FRAG = R.id.feed_frag;
+    private TitlesFragment mTitlesFragment;
+    private QuoteFragment mQuoteFragment;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main_activity);
-
-
-
-		// If the layout is single-pane, create the FriendsFragment 
-		// and add it to the Activity
-
-		if (!isInTwoPaneMode()) {
-
-			mTitlesFragment = new TitlesFragment();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main_activity);
 
 
-			// Add (replace) the FriendsFragment
-			
-			FragmentTransaction transaction = getFragmentManager()
-					.beginTransaction();
-			transaction.replace(R.id.fragment_container, mTitlesFragment);
-			transaction.commit();
+        // If the layout is single-pane, create the FriendsFragment
+        // and add it to the Activity
 
-		} else {
+        if (!isInTwoPaneMode()) {
+            mTitlesFragment = new TitlesFragment();
 
-			// Otherwise, save a reference to the FeedFragment for later use
+            // Add (replace) the TitlesFragment
+            FragmentTransaction transaction = getFragmentManager()
+                    .beginTransaction();
+            transaction.replace(QUOTE_FRAG_CONTAINER, mTitlesFragment);
+            transaction.commit();
 
-			mQuoteFragment = (QuoteFragment) getFragmentManager()
-					.findFragmentById(R.id.feed_frag);
-		}
+        } else {
 
-	}
+            // Otherwise, save a reference to the QuoteFragment for later use
+            mQuoteFragment = (QuoteFragment) getFragmentManager()
+                    .findFragmentById(FEED_FRAG);
+        }
 
-	// If there is no fragment_container ID, then the application is in
-	// two-pane mode
+    }
 
-	boolean isInTwoPaneMode() {
+    // If there is no fragment_container ID, then the application is in
+    // two-pane mode
 
-		return findViewById(R.id.fragment_container) == null;
-	
-	}
+    boolean isInTwoPaneMode() {
+        return findViewById(QUOTE_FRAG_CONTAINER) == null;
+    }
 
-	// Display selected Twitter quote
+    // Display selected quote
 
-	public void onItemSelected(int position) {
+    public void onItemSelected(int position) {
 
-		Log.i(TAG, "Entered onItemSelected(" + position + ")");
+        // If there is no QuoteFragment instance, then create one
+        if (mQuoteFragment == null)
+            mQuoteFragment = new QuoteFragment();
 
-		// If there is no FeedFragment instance, then create one
+        // If in single-pane mode, replace single visible Fragment
+        if (!isInTwoPaneMode()) {
 
-		if (mQuoteFragment == null)
-			mQuoteFragment = new QuoteFragment();
+            //Replace the fragment_container with the FeedFragment
 
-		// If in single-pane mode, replace single visible Fragment
+            // Get reference to the fragment manager
+            FragmentTransaction transaction = getFragmentManager()
+                    .beginTransaction();
 
-		if (!isInTwoPaneMode()) {
+            // Replace the QuoteFragment
+            transaction.replace(QUOTE_FRAG_CONTAINER, mQuoteFragment);
 
-			//Replace the fragment_container with the FeedFragment
-			
-			FragmentTransaction transaction = getFragmentManager()
-					.beginTransaction();
+            // Save previous state to the Activity backstack
+            transaction.addToBackStack(null);
 
-			transaction.replace(R.id.fragment_container, mQuoteFragment);
-			transaction.addToBackStack(null);
+            // Commit the Fragment Transaction
+            transaction.commit();
 
-			transaction.commit();
+            // Force execution of the Fragment Transaction
+            getFragmentManager().executePendingTransactions();
 
-			getFragmentManager().executePendingTransactions();
+        }
 
-		}
+        // Update QuoteFragment display
+        mQuoteFragment.updateFeedDisplay(position);
 
-		// Update Twitter quote display on FriendFragment
-		mQuoteFragment.updateFeedDisplay(position);
-
-	}
-
+    }
 }

@@ -2,10 +2,6 @@
 <resources>
 
     <string name="app_name">FragmentsMultiPane</string>
-    <string name="greeting">Select a feed to view!</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_friends_fragment">FriendsFragment</string>
-    <string name="title_activity_feed_fragment">FeedFragment</string>
 
     <string-array name="Titles">
         <item>The Tragedy of Hamlet, Prince of Denmark</item>

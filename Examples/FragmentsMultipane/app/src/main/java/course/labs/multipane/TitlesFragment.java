@@ -12,21 +12,24 @@ import java.util.Collections;
 
 public class TitlesFragment extends ListFragment {
 
-	private static final String TAG = "Lab-Fragments";
-    private final ArrayList<String> mTitles = new ArrayList<String>();
-
+    @SuppressWarnings("unused")
+    private static final String TAG = "Lab-Fragments";
+    private static final ArrayList<String> mTitles = new ArrayList<String>();
     private int mCurrIdx = -1;
+    private SelectionListener mCallback;
 
     public interface SelectionListener {
 		public void onItemSelected(int position);
 	}
 
-	private SelectionListener mCallback;
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+        // Load titles
         Collections.addAll(mTitles, getResources().getStringArray(R.array.Titles));
+
+        // Retain this Fragment across Activity reconfigurations
         setRetainInstance(true);
     	}
 
