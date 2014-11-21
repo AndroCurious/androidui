@@ -52,52 +52,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a0789d0-25fe-46b6-b1a6-e97732d63924" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_friends.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/feed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/raw/ladygaga.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/raw/rebeccablack.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/raw/taylorswift.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../UIRecyclerView/.idea/libraries/recyclerview_v7_21_0_0_rc1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../UIRecyclerView/.idea/libraries/support_annotations_21_0_0_rc1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../UIRecyclerView/.idea/libraries/support_v4_21_0_0_rc1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../UISpinner/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/multipane/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/multipane/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/java/course/examples/UI/RecyclerView/MyRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/java/course/examples/UI/RecyclerView/MyRecyclerViewAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/multipane/QuoteFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/multipane/QuoteFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/java/course/examples/UI/RecyclerView/RecyclerViewActivity.java" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/java/course/examples/UI/RecyclerView/RecyclerViewActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/java/course/examples/UI/RelativeLayout/RelativeLayoutActivity.java" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/java/course/examples/UI/RelativeLayout/RelativeLayoutActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/app/src/main/java/course/examples/ui/spinner/SpinnerActivity.java" afterPath="$PROJECT_DIR$/../UISpinner/app/src/main/java/course/examples/ui/spinner/SpinnerActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/multipane/TitlesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/multipane/TitlesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/app.iml" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/app.iml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/app/app.iml" afterPath="$PROJECT_DIR$/../UISpinner/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/build.gradle" afterPath="$PROJECT_DIR$/../UIRecyclerView/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/build.gradle" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/build.gradle" afterPath="$PROJECT_DIR$/../UIRelativeLayout/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/build.gradle" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/build.gradle" afterPath="$PROJECT_DIR$/../UISpinner/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/app/build.gradle" afterPath="$PROJECT_DIR$/../UISpinner/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/color.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/res/values/color.xml" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/res/values/color.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/values/color.xml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/values/color.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/app/src/main/res/values/color.xml" afterPath="$PROJECT_DIR$/../UISpinner/app/src/main/res/values/color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/../UIRecyclerView/gradle/wrapper/gradle-wrapper.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/../UIRelativeLayout/gradle/wrapper/gradle-wrapper.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/../UISpinner/gradle/wrapper/gradle-wrapper.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/res/layout/list_item.xml" afterPath="$PROJECT_DIR$/../UIRecyclerView/app/src/main/res/layout/list_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FragmentDynamicLayout/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FragmentDynamicLayout/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FragmentDynamicLayoutWithActionBar/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FragmentDynamicLayoutWithActionBar/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -1775,6 +1757,11 @@
       <created>1413607559829</created>
       <updated>1413607559829</updated>
     </task>
+    <task id="LOCAL-00001" summary="clean up">
+      <created>1416586951791</created>
+      <updated>1416586951791</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1857,6 +1844,10 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
