@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+@SuppressWarnings("FieldCanBeLocal")
 public class TitlesListActivity extends ListActivity {
 
-	public static String[] mTitleArray;
-	public static String[] mQuoteArray;
+	private static String[] mTitleArray;
+	private static String[] mQuoteArray;
 
 	public static final String INDEX = "index";
 
@@ -18,7 +19,7 @@ public class TitlesListActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		// Get the string arrays with the titles and qutoes
+		// Get the string arrays with the titles and quotes
 		mTitleArray = getResources().getStringArray(R.array.Titles);
 		mQuoteArray = getResources().getStringArray(R.array.Quotes);
 
@@ -32,7 +33,7 @@ public class TitlesListActivity extends ListActivity {
 	@Override
 	public void onListItemClick(ListView l, View v, int pos, long id) {
 		
-		// Create implicity Intent to start the QuoteListActivity class
+		// Create implicitly Intent to start the QuoteListActivity class
 		Intent showItemIntent = new Intent(TitlesListActivity.this,
 				QuoteListActivity.class);
 		
