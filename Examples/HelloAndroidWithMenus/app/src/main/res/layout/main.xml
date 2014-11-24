@@ -5,19 +5,19 @@
     android:id="@+id/container"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="32dp"
-    android:paddingBottom="32dp"
+    android:paddingTop="@dimen/image_padding_vertical"
+    android:paddingBottom="@dimen/image_padding_horizontal"
     tools:context=".HelloAndroidWithImageViewActivity">
 
     <ImageView
         android:id="@+id/android"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
         android:background="@drawable/ic_launcher"
         android:layout_centerHorizontal="true"
-        android:padding="32dp"
+        android:padding="@dimen/image_padding"
         android:rotation="45"
-        />
+        android:contentDescription="@string/android_image_desc_string" />
 
     <TextView
         android:id="@+id/hello_text"
@@ -31,6 +31,6 @@
         android:shadowRadius="16.0"
         android:shadowDx="12.0"
         android:shadowDy="32.0"
-        android:shadowColor="@android:color/darker_gray"/>
+        android:shadowColor="@android:color/darker_gray" />
 
 </RelativeLayout>

@@ -12,5 +12,6 @@
     <string name="youve_been_helped_string">you\'ve been helped</string>
     <string name="youve_been_helped_more_string">you\'ve been helped more</string>
     <string name="context_menu_shown_string">ContextMenu Shown</string>
+    <string name="android_image_desc_string">Android Image</string>
 
 </resources>
