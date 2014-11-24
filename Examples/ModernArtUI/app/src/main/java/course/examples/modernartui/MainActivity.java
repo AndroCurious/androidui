@@ -1,9 +1,5 @@
 package course.examples.modernartui;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -24,14 +20,17 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
 public class MainActivity extends Activity {
 
 	private ImageView mLeftOne, mLeftTwo, mRightOne, mRightThree;
-	private SeekBar mTintControl;
 
-	static final int MAX_TINT = 150;
-	static final int MAX_COLOR_COMP = 255;
-	private static final String VISIT_MOMA_URL = "http://www.moma.org";
+    private static final int MAX_TINT = 150;
+    private static final int MAX_COLOR_COMP = 255;
+    private static final String VISIT_MOMA_URL = "http://www.moma.org";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,48 +45,48 @@ public class MainActivity extends Activity {
 	// Set up the SeekBar the manages the tint level
 	private void setupTintControl() {
 
-		mTintControl = (SeekBar) findViewById(R.id.slider);
-		mTintControl.setMax(MAX_TINT);
-		mTintControl.setProgress(0);
+        SeekBar tintControl = (SeekBar) findViewById(R.id.slider);
+        tintControl.setMax(MAX_TINT);
+        tintControl.setProgress(0);
 
 		// Set an OnSeekBarChangeListener on the
-		mTintControl.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+        tintControl.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 
-			static final int MAX_THREADS = 4;
+            static final int MAX_THREADS = 4;
 
-			// Use a ThreadPoolExecutor to handle the work of responding to tint
-			// control. Using the DiscardOldestPolicy to throw away oldest work
-			// requests if too many jobs are scheduled.
+            // Use a ThreadPoolExecutor to handle the work of responding to tint
+            // control. Using the DiscardOldestPolicy to throw away oldest work
+            // requests if too many jobs are scheduled.
 
-			ThreadPoolExecutor executor = new ThreadPoolExecutor(MAX_THREADS,
-					MAX_THREADS, Long.MAX_VALUE, TimeUnit.SECONDS,
-					new ArrayBlockingQueue<Runnable>(MAX_THREADS),
-					new ThreadPoolExecutor.DiscardOldestPolicy());
+            final ThreadPoolExecutor executor = new ThreadPoolExecutor(MAX_THREADS,
+                    MAX_THREADS, Long.MAX_VALUE, TimeUnit.SECONDS,
+                    new ArrayBlockingQueue<Runnable>(MAX_THREADS),
+                    new ThreadPoolExecutor.DiscardOldestPolicy());
 
-			public void onProgressChanged(SeekBar seekBar, final int progress,
-					boolean fromUser) {
-				executor.submit(new Runnable() {
-					@Override
-					public void run() {
-						updateAllViews(progress);
-					}
-				});
-			}
+            public void onProgressChanged(SeekBar seekBar, final int progress,
+                                          boolean fromUser) {
+                executor.submit(new Runnable() {
+                    @Override
+                    public void run() {
+                        updateAllViews(progress);
+                    }
+                });
+            }
 
-			public void onStartTrackingTouch(SeekBar seekBar) {
-				// Not implemented
-			}
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // Not implemented
+            }
 
-			public void onStopTrackingTouch(SeekBar seekBar) {
-				// Not implemented
-			}
-		});
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                // Not implemented
+            }
+        });
 
 	}
 
 	// Update all Views
-	protected void updateAllViews(int alpha) {
-		updateView(mLeftOne, alpha);
+    void updateAllViews(int alpha) {
+        updateView(mLeftOne, alpha);
 		updateView(mLeftTwo, alpha);
 		updateView(mRightOne, alpha);
 		updateView(mRightThree, alpha);
