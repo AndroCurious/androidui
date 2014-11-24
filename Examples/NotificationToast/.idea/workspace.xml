@@ -37,7 +37,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: course.examples.notification.toast" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cba2e41-5ff4-4430-9a09-6457504ee75d" name="Default" comment="">
+    <list default="true" id="1cba2e41-5ff4-4430-9a09-6457504ee75d" name="Default" comment="clean up">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NotificationStatusBarWithExpandedView/.idea/dictionaries/aporter.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../HelloAndroidWithLogin/app/.gitignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../HelloAndroidWithLogin/app/proguard-rules.pro" afterPath="" />
@@ -110,24 +110,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ModernArtUI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ModernArtUI/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NotificationStatusBar/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../NotificationStatusBar/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NotificationStatusBarWithExpandedView/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../NotificationStatusBarWithExpandedView/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRecyclerView/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../UIRecyclerView/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UIRelativeLayout/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../UIRelativeLayout/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UISpinner/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../UISpinner/.idea/workspace.xml" />
     </list>
-    <list id="55df66e2-bf62-4702-bcaf-751c9226ea4d" name="Failed commit: Default" comment="clean up">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/color.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
     <ignored path="NotificationToast.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1335,6 +1324,11 @@
       <created>1413658661446</created>
       <updated>1413658661446</updated>
     </task>
+    <task id="LOCAL-00001" summary="clean up">
+      <created>1416870327908</created>
+      <updated>1416870327908</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
