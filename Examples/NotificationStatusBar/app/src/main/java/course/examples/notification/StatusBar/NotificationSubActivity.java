@@ -1,4 +1,4 @@
-package course.examples.Notification.StatusBar;
+package course.examples.notification.StatusBar;
 
 import android.app.Activity;
 import android.os.Bundle;

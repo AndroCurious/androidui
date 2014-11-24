@@ -1,4 +1,4 @@
-package course.examples.Notification.StatusBar;
+package course.examples.notification.StatusBar;
 
 import android.app.Activity;
 import android.app.Notification;
@@ -16,7 +16,7 @@ public class NotificationStatusBarActivity extends Activity {
 
     // Notification ID to allow for future updates
     private static final int MY_NOTIFICATION_ID = 1;
-    public static final String BASE_SOUND_URI = "android.resource://course.examples.Notification.StatusBar/";
+    public static final String BASE_SOUND_URI = "android.resource://course.examples.notification.StatusBar/";
 
     // Notification Count
     private int mNotificationCount;
