@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.test.MainActivity"
-    tools:ignore="NestedWeights" >
+    tools:context="course.examples.modernartpiano.MainActivity"
+    tools:ignore="NestedWeights">
 
     <SeekBar
         android:id="@+id/volume_bar"
@@ -16,14 +16,14 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/volume_bar"
         android:baselineAligned="false"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/left_side"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/indigo"
@@ -56,7 +56,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/white1"
