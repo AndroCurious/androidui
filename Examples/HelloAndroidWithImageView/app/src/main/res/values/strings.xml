@@ -3,6 +3,6 @@
 
     <string name="app_name">HelloAndroidWithImageView</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="android_image_desc_string">Android Image</string>
 
 </resources>
