@@ -1,4 +1,4 @@
-package course.examples.Fragments.StaticLayout;
+package course.examples.fragments.StaticLayout;
 
 import android.app.Activity;
 import android.app.ListFragment;

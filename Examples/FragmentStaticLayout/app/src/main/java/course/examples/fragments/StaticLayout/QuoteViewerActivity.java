@@ -1,9 +1,9 @@
-package course.examples.Fragments.StaticLayout;
+package course.examples.fragments.StaticLayout;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import course.examples.Fragments.StaticLayout.TitlesFragment.ListSelectionListener;
+import course.examples.fragments.StaticLayout.TitlesFragment.ListSelectionListener;
 
 public class QuoteViewerActivity extends Activity implements
 		ListSelectionListener {
