@@ -15,7 +15,7 @@ public class QuoteFragment extends Fragment {
 
     @SuppressWarnings("unused")
     private static final String TAG = "Lab-Fragments";
-    private static final List<String> mQuotes = new ArrayList<String>();
+    private static final List<String> mQuotes = new ArrayList<>();
     private TextView mQuoteView;
     private int mCurrIdx = -1;
 

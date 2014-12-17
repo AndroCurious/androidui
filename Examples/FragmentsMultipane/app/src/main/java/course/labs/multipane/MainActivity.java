@@ -8,6 +8,7 @@ public class MainActivity extends Activity implements
         TitlesFragment.SelectionListener {
 
     @SuppressWarnings("unused")
+
     private static final String TAG = "Lab-Fragments";
     private static final int QUOTE_FRAG_CONTAINER = R.id.fragment_container;
     private static final int FEED_FRAG = R.id.feed_frag;
@@ -18,7 +19,6 @@ public class MainActivity extends Activity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
-
 
         // If the layout is single-pane, create the FriendsFragment
         // and add it to the Activity
@@ -31,14 +31,12 @@ public class MainActivity extends Activity implements
                     .beginTransaction();
             transaction.replace(QUOTE_FRAG_CONTAINER, mTitlesFragment);
             transaction.commit();
-
         } else {
 
             // Otherwise, save a reference to the QuoteFragment for later use
             mQuoteFragment = (QuoteFragment) getFragmentManager()
                     .findFragmentById(FEED_FRAG);
         }
-
     }
 
     // If there is no fragment_container ID, then the application is in
