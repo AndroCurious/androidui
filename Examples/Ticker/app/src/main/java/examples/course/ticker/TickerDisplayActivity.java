@@ -9,8 +9,9 @@ public class TickerDisplayActivity extends Activity {
 
     private TextView mCounterView;
     private int mCounter = 0;
-    private Handler mHandler = new Handler();
-    Runnable update;
+    private final long delay = 1000;
+    private final Handler mHandler = new Handler();
+    private Runnable update;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +20,13 @@ public class TickerDisplayActivity extends Activity {
 
         mCounterView = (TextView) findViewById(R.id.counter);
 
+        // Runnable that updates the counter and then posts
+        // itself to the Handler to be be run again after 1 second
         update = new Runnable() {
             @Override
             public void run() {
                 mCounterView.setText(String.valueOf(++mCounter));
-                mHandler.postDelayed(this, 1000);
+                mHandler.postDelayed(this, delay);
             }
         };
     }
@@ -42,9 +45,13 @@ public class TickerDisplayActivity extends Activity {
 
     private void setTimerEnabled(boolean isInForeground) {
         if (isInForeground) {
+
+            // Update the counter and post the update Runnable
             mCounterView.setText(String.valueOf(mCounter));
-            mHandler.post(update);
+            mHandler.postDelayed(update, delay);
         } else {
+
+            // Remove posted Runnables, stopping the ticker's update
             mHandler.removeCallbacks(update);
             }
     }
